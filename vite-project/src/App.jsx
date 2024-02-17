@@ -1,11 +1,12 @@
-import weather  
 
+import Btn from "./Btn"
 function app() {
   return (
     <div>
-      <h1>app</h1>
-
-
+      
+      <button>Hello jeet i am in app</button>
+      <h1>APP.jsx</h1>
+      <Btn></Btn>
     </div>
   );
 }
