@@ -1,5 +1,13 @@
+import weather  
+
 function app() {
-  return <h1>Hello i'am jeet</h1>;
+  return (
+    <div>
+      <h1>app</h1>
+
+
+    </div>
+  );
 }
 
 export default app;
