@@ -2,8 +2,7 @@ function EnterTodo() {
   return (
     <div>
       <div class="container text-center">
-        <div class="row"></div>
-        <div class="row">
+        <div class="row jb-row">
           <div class="col">
             <input type="text" placeholder="Enter Todo" />
           </div>

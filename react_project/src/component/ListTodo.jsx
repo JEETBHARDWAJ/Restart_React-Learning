@@ -3,10 +3,10 @@ function ListTodo() {
     let date = "12/03/2001";
   return (
     <center>
-      <div class="container text-center">
-        <div class="row">
+      <div class="container ">
+        <div class="row jb-row">
           <div class="col-sm">
-            <h3>{item}</h3>
+            <h5>{item}</h5>
           </div>
           <div class="col-sm">{date}</div>
           <div class="col-sm">

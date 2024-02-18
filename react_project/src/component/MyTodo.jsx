@@ -1,7 +1,7 @@
 function MyTodo() {
   return (
     <center>
-      <h1>my todo list</h1>
+      <h1>Todo List</h1>
     </center>
   );
 }
