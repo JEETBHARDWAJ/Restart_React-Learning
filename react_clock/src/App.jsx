@@ -1,6 +1,10 @@
+import ReClock from "../component/ReClock";
+import "./App.css"
 function app(){
   return (<div>
-    <h1>hello</h1>
+    <ReClock></ReClock>
+    
+
     
   </div>);
 }
