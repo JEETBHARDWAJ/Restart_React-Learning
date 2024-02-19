@@ -1,11 +1,16 @@
+import React from 'react'
 import ReClock from "../component/ReClock";
 import "./App.css"
-function app(){
-  return (<div>
-    <ReClock></ReClock>
-    
+import DateAndTime from '../component/DateAndTime';
 
-    
-  </div>);
+
+function app(){
+  return (
+    <React.Fragment>
+      <ReClock/>
+      <DateAndTime/>
+    </React.Fragment>
+
+  );
 }
 export default app;
