@@ -10,12 +10,15 @@ function Food(){
     "Grains",
     "Bread",
   ];
+  if(Fooditems.length === 0){
+    return <h1>I am still hungary</h1>
+  }
 
   return (
     <>
       <h1>Healty Food</h1>
-      <ul class="list-group">
-        {Fooditems.map(item=> <li class="list-group-item">{item}</li>)}
+      <ul className="list-group">
+        {Fooditems.map(item=> <li key={item} class="list-group-item">{item}</li>)}
       </ul>
     </>
   );
