@@ -4,7 +4,7 @@ function Items(props) {
     <>
       <ul class="list-group">
         {props.item.map((food) => (
-            <li class="list-group-item disabled" aria-disabled="true">
+            <li class="list-group-item " aria-disabled="true">
          {food}
         </li>
         ))}
