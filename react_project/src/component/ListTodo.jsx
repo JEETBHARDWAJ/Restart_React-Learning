@@ -1,14 +1,13 @@
-function ListTodo() {
-    let item = "collage";
-    let date = "12/03/2001";
+function ListTodo(props) {
+
   return (
     <center>
       <div class="container ">
         <div class="row jb-row">
           <div class="col-sm">
-            <h5>{item}</h5>
+            <h5>{props.ittodo}</h5>
           </div>
-          <div class="col-sm">{date}</div>
+          <div class="col-sm">{props.dttodo}</div>
           <div class="col-sm">
             <button type="button" class="btn btn-danger">
               Delete
