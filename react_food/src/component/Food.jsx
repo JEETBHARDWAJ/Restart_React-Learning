@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-function Food(){
+import style from "./Food.module.css";
+function Food() {
   let Fooditems = [
     "Fruit",
     "Eggs",
@@ -10,15 +11,22 @@ function Food(){
     "Grains",
     "Bread",
   ];
-  if(Fooditems.length === 0){
-    return <h1>I am still hungary</h1>
+  if (Fooditems.length === 0) {
+    return <h1>I am still hungary</h1>;
   }
 
   return (
     <>
-      <h1>Healty Food</h1>
+      <h1 id={style.Titel}>Food items</h1>
       <ul className="list-group">
-        {Fooditems.map(item=> <li key={item} class="list-group-item">{item}</li>)}
+        {Fooditems.map((item) => (
+          <li key={item} className="list-group-item">
+            {item}{" "}
+            <button type="button" className={`${style.butt} btn btn-primary`} onClick={() => {console.log("buy button clicked")} }>
+              Buy
+            </button>
+          </li>
+        ))}
       </ul>
     </>
   );
