@@ -1,7 +1,6 @@
-function FoodInput(){
-    const handlingEvents = (event) => { console.log(event.target.value) }
+function FoodInput(props){
     return(<>
-    <input type="text" placeholder=" Enter food item"  onChange={ handlingEvents}/>
+    <input type="text" placeholder=" Enter food item"  onChange={props.handleOnChange}/>
 
  </>);
 }
