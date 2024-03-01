@@ -1,5 +1,6 @@
+import FoodItemsList from "./FoodItemsList";
 import "bootstrap/dist/css/bootstrap.min.css";
-import style from "./Food.module.css";
+
 function Food() {
   let Fooditems = [
     "Fruit",
@@ -20,16 +21,7 @@ function Food() {
     <>
       <ul className="list-group">
         {Fooditems.map((item) => (
-          <li key={item} className="list-group-item">
-            {item}{" "}
-            <button
-              type="button"
-              className={`${style.butt} btn btn-primary`}
-              onClick={console.log(`${item}"buy button clicked"`)}
-            >
-              Buy
-            </button>
-          </li>
+          <FoodItemsList key = {item} healthyFood = {item} />
         ))}
       </ul>
     </>
