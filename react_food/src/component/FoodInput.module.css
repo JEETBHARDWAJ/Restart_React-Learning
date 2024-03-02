@@ -1,9 +1,15 @@
 .inputStyle{
+    margin: auto;
+}
+input{
     width: 300px;
     margin: auto;
     border: 2px solid black;
+    margin-left: 5px;
 }
 .savebtn{
+    position: absolute;
     float: right;
-    width: 108px;
+    margin-left: 10px;
+    width: auto;
 }

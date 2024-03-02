@@ -6,10 +6,10 @@ const FoodItemsList = (props) => {
     {props.healthyFood}
     <button
       type="button"
-      className={`${style.butt} btn btn-primary`}
+      className={`${style.butt} btn btn-danger`}
       onClick={handilOnClick}
     >
-      Buy
+      Delete
     </button>
     </li>
     </>);
