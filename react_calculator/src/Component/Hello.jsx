@@ -1,28 +1,16 @@
-import style from './Hello.module.css'
-function Hello(){
-    const Buttons= [
-        "c",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "0",
-        "/",
-        "x",
-        "+",
-        "-",
-      ];
-
-    return(<>
-     <div className={style.btn}>
-          {Buttons.map(keyItam =><button className="btn">{keyItam}</button> )}
-        </div>
-    </>) ;
+import style from "./Hello.module.css";
+function Hello({ Buttons, handleOnClick }) {
+  return (
+    <>
+      <div className={style.btn}>
+        {Buttons.map((keyItem) => (
+          <button className="btn" onClick={() => handleOnClick(keyItem)}>
+            {keyItem}
+          </button>
+        ))}
+      </div>
+    </>
+  );
 }
 
 export default Hello;

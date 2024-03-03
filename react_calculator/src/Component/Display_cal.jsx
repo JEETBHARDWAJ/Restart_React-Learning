@@ -1,9 +1,9 @@
 import css from './Display_cal.module.css'
-const Display_cal = () => {
+const Display_cal = (props) => {
   return (
     <>
       <div className={css.display}>
-        <input type="text" placeholder="calculatar" />
+        <input type="text" placeholder="calculatar" value={props.calVal} readOnly />
       </div>
     </>
   );
