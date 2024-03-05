@@ -4,7 +4,6 @@ function FoodInput(props){
     return(<>
     <div className={style.inputStyle}>
     <input type="text" placeholder=" Enter food item"  onKeyDown={props.handleOnChange}/>
-    <button type="button" className={`${style.savebtn} btn btn-success `}>save</button>
 
     </div>
 

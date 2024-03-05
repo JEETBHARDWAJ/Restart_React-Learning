@@ -1,13 +1,13 @@
 import style from './FoodItemsList.module.css';
-const FoodItemsList = (props) => {
-    const handilOnClick = () =>{console.log(`"Click on ${props.healthyFood}" `)};
+const FoodItemsList = ({healthyFood , onClickDelete}) => {
+
     return (<>         
-    <li key={props.healthyFood} className="list-group-item">
-    {props.healthyFood}
+    <li key={healthyFood} className="list-group-item">
+    {healthyFood}
     <button
       type="button"
       className={`${style.butt} btn btn-danger`}
-      onClick={handilOnClick}
+      onClick={()=>onClickDelete(healthyFood)}
     >
       Delete
     </button>

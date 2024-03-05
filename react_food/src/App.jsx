@@ -8,7 +8,7 @@ import FoodHeading from "./component/FoodHeading";
 function App() {
  
   
-  let [Fooditems, setTextValue] = useState([ "Fruit",
+  const [Fooditems, setTextValue] = useState([ "Fruit",
     "Eggs",
     "Meat",])
 
@@ -22,12 +22,20 @@ function App() {
 
     }
   };
+
+  const onCleakDelete = (healthyFood) => {
+    let updatedFoodItem = [...Fooditems];
+    let index1 = Fooditems.indexOf(healthyFood);
+    updatedFoodItem.splice(index1,1);
+    setTextValue(updatedFoodItem);
+  }
+
   return (
     <Container>
       <FoodHeading></FoodHeading>
       <FoodInput handleOnChange={handleOnChange}></FoodInput>
       <br />
-      <Food Fooditems={Fooditems}></Food>
+      <Food Fooditems={Fooditems} onCleakDelete={onCleakDelete}></Food>
     </Container>
   );
 }
